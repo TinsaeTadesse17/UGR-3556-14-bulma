@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Tinsae Tadesse</title>
+  <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #5d556b !important; 
+    }
+    
+    .navbar {
+        background-color: #cdbceb!important;
+        color: #ffffff; 
+        
+    }
+
+    .navbar-item:hover {
+        background-color: #9b59b6!important; 
+    }
+
+    .navbar-burger {
+        color: #fff;
+    }
+
+    .section, .footer {
+      background-color: #5d556b; 
+      color: #ffffff; 
+    }
+
+    .section__img {
+      border: 8px solid #cdbceb; 
+    }
+
+    .footer__link {
+      color: #ffffff !important;
+    }
+
+    .footer__link:hover {
+      color: #cdbceb !important;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    
+    <nav class="navbar is-light" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggleMenu()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="index.html" class="navbar-item has-text-light">Home</a>
+                <a href="about.html" class="navbar-item has-text-light">About</a>
+                <a href="projects.html" class="navbar-item has-text-light">Projects</a>
+                <a href="skills.html" class="navbar-item has-text-light">Skills</a>
+                <a href="contact.html" class="navbar-item has-text-light">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-third">
+          
+          <img src="images/image1.jpg" class="image section__img" alt="Tinsae Tadesse">
+        </div>
+        <div class="column">
+          
+          <h1 class="title is-3 has-text-light">Who is Tinsae?</h1>
+          <p>
+            <p class="section__p ">Web Developer | Software Engineer</p>
+            <br><p class="section__p ">Hello, I'm Tinsae Tadesse, a passionate web developer and software engineer. 
+            <br>I specialize in crafting unique, high-quality websites and applications that 
+            <br>not only meet but exceed client expectations.</p>
+            <audio controls class="content__audio">
+                <source src="audio/audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <footer class="footer mb-0">
+    
+      <p>
+        Connect with me!
+      </p>
+      <div class="footer__icons">
+        <a class="footer__link" href="#" target="_blank" class="footer__link"><i class="icon fa fa-linkedin"></i></a>
+        <a class="footer__link" href="#" target="_blank" class="footer__link"><i class="icon fa fa-twitter"></i></a>
+        <a class="footer__link" href="#" target="_blank" class="footer__link"><i class="icon fa fa-instagram"></i></a>
+      </div>
+    
+  </footer>
+
+  <script>
+    function toggleMenu() {
+        var navMenu = document.querySelector('.navbar-menu');
+        navMenu.classList.toggle('is-active');
+    }
+</script>
+</body>
+</html>
